@@ -3,7 +3,7 @@
 namespace App\Http\Responses;
 
 use Filament\Auth\Http\Responses\LoginResponse as ResponsesLoginResponse;
-use Filement\Pages\Dashboard;
+use Filament\Pages\Dashboard;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Features\SupportRedirects\Redirector;
 
