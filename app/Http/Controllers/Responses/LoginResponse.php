@@ -13,11 +13,11 @@ class LoginResponse extends ResponsesLoginResponse
     {
         $user = auth()->user();
 
-        if ($user->hasRole('Admin')) {
+        if ($user->hasRole('admin')) {
             return redirect()->to(Dashboard::getUrl(panel: 'admin'));
         }
         
-        if ($user->hasRole('Technician')) {
+        if ($user->hasRole('technician')) {
             return redirect()->to(Dashboard::getUrl(panel: 'technician'));
         }
 
