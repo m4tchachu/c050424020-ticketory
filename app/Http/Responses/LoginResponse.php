@@ -9,7 +9,7 @@ use Livewire\Features\SupportRedirects\Redirector;
 
 class LoginResponse extends ResponsesLoginResponse
 {
-    public function toResponse($request): RedirectResponse
+    public function toResponse($request): RedirectResponse | Redirector
     {
         $user = auth()->user();
 

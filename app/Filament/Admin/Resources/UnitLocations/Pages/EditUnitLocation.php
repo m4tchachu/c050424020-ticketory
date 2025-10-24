@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Filament\Admin\Resources\UnitLocations\Pages;
+
+use App\Filament\Admin\Resources\UnitLocations\UnitLocationResource;
+use Filament\Actions\DeleteAction;
+use Filament\Resources\Pages\EditRecord;
+
+class EditUnitLocation extends EditRecord
+{
+    protected static string $resource = UnitLocationResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DeleteAction::make(),
+        ];
+    }
+}
