@@ -19,7 +19,7 @@ class RoleAndUserSeeder extends Seeder
         $admin = User::firstOrCreate(
             ['email' => 'admin@example.com'],
             [
-                'name' => 'Admin User',
+                'name' => 'Super Admin',
                 'password' => Hash::make('password'),
             ]
         );
@@ -27,7 +27,7 @@ class RoleAndUserSeeder extends Seeder
         $tech = User::firstOrCreate(
             ['email' => 'tech@example.com'],
             [
-                'name' => 'Tech User',
+                'name' => 'Technician One',
                 'password' => Hash::make('password'),
             ]
         );

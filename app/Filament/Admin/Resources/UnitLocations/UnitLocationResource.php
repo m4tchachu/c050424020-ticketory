@@ -19,8 +19,8 @@ class UnitLocationResource extends Resource
     protected static ?string $model = UnitLocation::class;
 
     // protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedBuildingOffice;
-    protected static ?string $navigationLabel = 'Unit Location';
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedMapPin;
+    protected static ?string $navigationLabel = 'Lokasi Unit';
 
     public static function form(Schema $schema): Schema
     {

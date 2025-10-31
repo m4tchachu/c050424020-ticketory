@@ -16,10 +16,6 @@ class UnitLocationsTable
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
-                TextColumn::make('location.name')
-                    ->label('Lokasi Unit')
-                    ->sortable()
-                    ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
